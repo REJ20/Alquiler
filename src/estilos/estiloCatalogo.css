@@ -1,0 +1,33 @@
+.catalogo-container{
+    max-width: 80%;
+    min-height: 70%;
+    margin: 30px 45px;
+    padding: 34px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6A5ACD;
+}
+
+.catalogo{
+    width: 325px;
+    margin: 7px;
+    padding: 8px 8px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.paginacion-container{
+    min-height: 50px;
+    font-size: 60px;
+    margin: 17px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #6A5ACd;
+    
+}
+

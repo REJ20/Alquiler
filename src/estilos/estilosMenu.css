@@ -1,0 +1,21 @@
+.menu-container{
+    background-color: #0055b6;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 154px;
+    height: 61px;
+    cursor: pointer;
+}
+
+.option-menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'antd/dist/reset.css';
 import './App.css';
+import MenuBarUser from './componentes/MenuBarUser';
+import Carrusel from './componentes/Carusel';
+import Catalogo from './componentes/CatalogoPeliculas';
+import Paginacion from './componentes/Paginacion';
+import Pie from './componentes/Pie';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <header>
+          <MenuBarUser/>
+        </header>
+        <main>
+          <Carrusel />
+          <section>
+            <Catalogo />
+          </section>
+          <section>
+            <Paginacion />
+          </section>
+        </main>
+        <footer>
+          <Pie />
+        </footer>
+      </body>
     </div>
   );
 }
