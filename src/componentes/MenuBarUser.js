@@ -2,9 +2,11 @@ import { Menu } from 'antd';
 import { Input, Space} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar } from 'antd';
+import { Button } from 'antd/es/radio';
 //import CerrarSesion from '../componentes/cerrarSesion';
 import Logo from '../imagenes/Logo.png';
 import '../estilos/estilosMenu.css';
+import { Link } from 'react-router-dom';
 
 const { Search } = Input;
 const onSearch = (value) => console.log(value);
@@ -29,6 +31,11 @@ function MenuBarUser() {
           />
           </div>
           <div>
+            <Link to={'/Login'}>
+              <Button type="primary">
+                Login
+              </Button>
+              </Link>
             <Space wrap size={10}>
               <Avatar size={50} icon={<UserOutlined />} />
             </Space>

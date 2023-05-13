@@ -2,6 +2,7 @@ import { Card } from 'antd';
 import '../estilos/estiloCatalogo.css';
 import { Button } from 'antd/es/radio';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const { Meta } = Card;
 
@@ -18,9 +19,12 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
-          <Button type="primary" size={size}>
-            Buy
-          </Button>
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Buy
+            </Button>
+          </Link>
+          
           <Button type="primary" size={size}>
             Alquilar
           </Button>
