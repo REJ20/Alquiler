@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid #6A5ACD;
+
 }
 
 .catalogo{
@@ -19,15 +19,28 @@
 
 }
 
-.paginacion-container{
+.pagination-container{
+    width: 100%;
+    background-color: #8B0000;
     min-height: 50px;
     font-size: 60px;
-    margin: 17px;
+    margin: 17px 0 17px 0;
     padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #6A5ACd;
+    border-color:  white;
     
 }
 
+.button-buy{
+    background-color: #fcfcfc;
+    color: black;
+    border-radius: 12px;
+    font-family: Lato, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 25px 0 25px;
+    padding: 5px;
+}

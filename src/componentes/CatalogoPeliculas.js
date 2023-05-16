@@ -21,13 +21,15 @@ const Catalogo = () => {
           <Meta title="Europe Street beat" description="www.instagram.com" />
           <Link to={'/PageBuy'}>
             <Button type="primary" size={size}>
-             Buy
+             Comprar
             </Button>
           </Link>
           
-          <Button type="primary" size={size}>
-            Alquilar
-          </Button>
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -37,6 +39,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -46,6 +59,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -55,6 +79,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -64,6 +99,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -73,6 +119,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -82,6 +139,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -91,6 +159,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -100,6 +179,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -109,6 +199,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -118,6 +219,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -127,6 +239,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -136,6 +259,18 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
+          
       </Card>
       </div>
       <div className='catalogo'>
@@ -145,6 +280,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -154,6 +300,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
       </div>
       <div className='catalogo'>
@@ -163,6 +320,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -172,6 +340,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -181,6 +360,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -190,6 +380,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
     <div className='catalogo'>
@@ -199,6 +400,17 @@ const Catalogo = () => {
         src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
       >
           <Meta title="Europe Street beat" description="www.instagram.com" />
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Comprar
+            </Button>
+          </Link>
+          
+          <Link to={'/PageBuy'}>
+            <Button type="primary" size={size}>
+             Alquilar
+            </Button>
+          </Link>
       </Card>
     </div>
   </div>

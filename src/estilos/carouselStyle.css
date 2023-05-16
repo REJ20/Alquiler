@@ -1,0 +1,10 @@
+.carousel-container{
+    min-height: 700px;
+    line-height: 160px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

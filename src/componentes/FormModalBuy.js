@@ -1,72 +1,194 @@
 import React from "react";
-import { Input, Select, Button, Form } from 'antd';
+import { Input, Select, InputNumber, Button, Form } from 'antd';
 //import { CreditCardOutlined } from '@ant-design/icons';
-import { PlusOutlined } from '@ant-design/icons';
+import '../estilos/buyStyle.css';
 import {  Col, DatePicker, Drawer, Row, Space } from 'antd';
 import { useState } from 'react';
 
-/*const layout = {
-    labelCol: {
-      span: 8,
-    },
-    wrapperCol: {
-      span: 8,
-    },
-  };
-  
-  /* eslint-disable no-template-curly-in-string */
-  /*
-  const validateMessages = {
-    required: '${label} is required!',
-    types: {
-      email: '${label} is not a valid email!',
-      number: '${label} is not a valid number!',
-    },
-    number: {
-      range: '${label} must be between ${min} and ${max}',
-    },
-  };
-  /* eslint-enable no-template-curly-in-string */
-  
-  /*const onFinish = (values) => {
-    console.log(values);
-  };
-  const validateCreditCardNumber = (value) => {
-    // Expresión regular para validar el número de tarjeta de crédito
-    const regex = /^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13})$/;
-    if (!regex.test(value)) {
-      return Promise.reject('Por favor ingrese un número de tarjeta de crédito válido');
-    }
-    return Promise.resolve();
-  };
-*/
-  const { Option } = Select;
+const onChange = (value) => {
+  console.log('changed', value);
+};
+
+const { Option } = Select;
 
 const FormModalBuy = () => {
-  const [open, setOpen] = useState(false);
-  const showDrawer = () => {
-    setOpen(true);
+  const [openBuy, setOpenBuy] = useState(false);
+  const showDrawerBuy = () => {
+    setOpenBuy(true);
   };
-  const onClose = () => {
-    setOpen(false);
+  const onCloseBuy = () => {
+    setOpenBuy(false);
+  };
+  const [openRent, setOpenRent] = useState(false);
+  const showDrawerRent = () => {
+    setOpenRent(true);
+  };
+  const onCloseRent = () => {
+    setOpenRent(false);
   };
   return (
     <>
-      <Button type="primary" onClick={showDrawer} icon={<PlusOutlined />}>
-        New account
+    {/* Boton de formulario de compra */}
+      <InputNumber className="input-number" min={1} max={10} defaultValue={3} onChange={onChange} /> <p>Cantidad</p> 
+      <Button className='button-buy' onClick={showDrawerBuy}>
+        Comprar
       </Button>
       <Drawer
-        title="Create a new account"
+        title="Datos personales de Compra"
         width={720}
-        onClose={onClose}
-        open={open}
+        onClose={onCloseBuy}
+        open={openBuy}
         bodyStyle={{
           paddingBottom: 80,
         }}
         extra={
           <Space>
-            <Button onClick={onClose}>Cancel</Button>
-            <Button onClick={onClose} type="primary">
+            <Button onClick={onCloseBuy}>Cancel</Button>
+            <Button onClick={onCloseBuy} type="primary">
+              Submit
+            </Button>
+          </Space>
+        }
+      >
+        <Form layout="vertical" hideRequiredMark>
+          <Row gutter={16}>
+            <Col span={10}>
+              <Form.Item
+                name="name"
+                label="Nombres:"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter user name',
+                  },
+                ]}
+              >
+                <Input placeholder="Please type your name" />
+              </Form.Item>
+            </Col>
+            <Col span={10}>
+              <Form.Item
+                name="lastName"
+                label="Apellidos:"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter user name',
+                  },
+                ]}
+              >
+                <Input placeholder="Please type your last name" />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row gutter={16}>
+            <Col span={6}>
+              <Form.Item
+                name="birthdate"
+                label="Fecha de nacimiento"
+                rules={[
+                  {
+                    required: true,
+                    message: '',
+                  },
+                ]}
+              >
+                <Space direction="vertical" size={12}>
+                <DatePicker  />
+                </Space>
+              </Form.Item>
+            </Col>
+            <Col span={12}>
+              <Form.Item
+                name="type"
+                label="Type"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please choose the type',
+                  },
+                ]}
+              >
+                <Select placeholder="Please choose the type">
+                  <Option value="private">Private</Option>
+                  <Option value="public">Public</Option>
+                </Select>
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row gutter={16}>
+            <Col span={12}>
+              <Form.Item
+                name="approver"
+                label="Approver"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please choose the approver',
+                  },
+                ]}
+              >
+                <Select placeholder="Please choose the approver">
+                  <Option value="jack">Jack Ma</Option>
+                  <Option value="tom">Tom Liu</Option>
+                </Select>
+              </Form.Item>
+            </Col>
+            <Col span={12}>
+              <Form.Item
+                name="dateTime"
+                label="DateTime"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please choose the dateTime',
+                  },
+                ]}
+              >
+                <DatePicker.RangePicker
+                  style={{
+                    width: '100%',
+                  }}
+                  getPopupContainer={(trigger) => trigger.parentElement}
+                />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row gutter={16}>
+            <Col span={24}>
+              <Form.Item
+                name="description"
+                label="Description"
+                rules={[
+                  {
+                    required: true,
+                    message: 'please enter url description',
+                  },
+                ]}
+              >
+                <Input.TextArea rows={4} placeholder="please enter url description" />
+              </Form.Item>
+            </Col>
+          </Row>
+        </Form>
+      </Drawer>
+
+      {/** Botton de alquiler  */}
+      <Button className='button-rent' onClick={showDrawerRent}>
+        Alquilar
+      </Button>
+      <Drawer
+        title="Datos personales de Alquiler"
+        width={720}
+        onClose={onCloseRent}
+        open={openRent}
+        bodyStyle={{
+          paddingBottom: 80,
+        }}
+        extra={
+          <Space>
+            <Button onClick={onCloseRent}>Cancel</Button>
+            <Button onClick={onCloseRent} type="primary">
               Submit
             </Button>
           </Space>
@@ -205,97 +327,5 @@ const FormModalBuy = () => {
     </>
   );
 }
-
-/*const FormBuy = () => (
-    <div className='FormCompra-container'>
-        <h2>Formulario de Compra</h2>
-        <div>
-            <Form
-                {...layout}
-                name="nest-messages"
-                onFinish={onFinish}
-                style={{
-                maxWidth: 600,
-                }}
-                validateMessages={validateMessages}
-            >
-            <Form.Item
-            name={['user', 'nombre']}
-            label="Nombre"
-            rules={[{ required: true, },
-            ]}
-            >
-            <Input />
-            </Form.Item>
-            <Form.Item
-            name={['user', 'apellido']}
-            label="Apellido"
-            rules={[{ required: true, },
-            ]}
-            >
-            <Input />
-            </Form.Item>
-            <Form.Item
-            name={['user', 'email']}
-            label="Email"
-            rules={[
-                {
-                    required: true,
-                type: 'email',
-                },
-            ]}
-            >
-            <Input />
-            </Form.Item>
-            <Form.Item label="Select">
-            <Select>
-            <Select.Option value="cash">Cash</Select.Option>
-            <Select.Option value="tarjeta">Tarjeta</Select.Option>
-            </Select>
-            </Form.Item>
-            
-            <Form.Item
-            name={['user', 'credit-card']}
-            label='N° tarjeta'
-            rules={[{ required: true, },]}
-            >
-            <Input
-                prefix={<CreditCardOutlined />}
-                placeholder="Número de tarjeta de crédito"
-                type="credit-card"
-                onBlur={(e) => validateCreditCardNumber(e.target.value)}
-            />
-            </Form.Item>
-
-            <Form.Item
-            name={['user', 'edad']}
-            label="Edad"
-            rules={[
-                {
-                type: 'number',
-                min: 18,
-                max: 99,
-                },
-            ]}
-            >
-            <InputNumber />
-            </Form.Item>
-            <Form.Item
-            wrapperCol={{
-                ...layout.wrapperCol,
-                offset: 8,
-            }}
-            >
-            <Button type="primary" htmlType="submit">
-                Submit
-            </Button>
-            <Button type="default" htmlType="reset">
-                Cancelar
-            </Button>
-            </Form.Item>
-        </Form>
-    </div>
-  </div>
-)*/
 
 export default FormModalBuy;

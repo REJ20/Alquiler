@@ -1,16 +1,14 @@
 import React from "react";
-import Compra from './Compra';
+import Buy from './Compra';
 import MenuBarUser from "./MenuBarUser";
-import FooterPage from './FooterPage';
-import FormModalBuy from './FormModalBuy';
+import Footer from './FooterPage';
 
 const PageBuy = () => {
     return(
     <div>
         <MenuBarUser />
-        <Compra />
-        <FormModalBuy />
-        <FooterPage />
+        <Buy />
+        <Footer />
     </div>
         
    )

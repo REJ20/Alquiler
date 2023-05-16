@@ -3,7 +3,7 @@ import '../estilos/estiloCatalogo.css';
 
 function Paginacion () {
     return( 
-        <div className='paginacion-container'>
+        <div className='pagination-container'>
             <div>
             <Pagination defaultCurrent={1} total={50} />
             </div>

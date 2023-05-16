@@ -14,12 +14,13 @@ function MenuBarUser() {
   return (
         <Menu className='menu-container' theme="dark" mode="horizontal">
           <div>
-            <img className='logo' src={Logo} alt="" />
+            <Link to={'/'}><h3>NUTELA MOVIES</h3>
+            </Link>
           </div>
           <div className='option-menu'>
-            <Menu.Item key="Inicio">Inicio</Menu.Item>
-            <Menu.Item key="Peliculas">Peliculas</Menu.Item>
-            <Menu.Item key="contacto">Contacto</Menu.Item>
+            <Link to={'/'}><Menu.Item className='item-menu' key="Inicio">Inicio</Menu.Item></Link>
+            <Link to={'/'}><Menu.Item className='item-menu' key="Peliculas">Peliculas</Menu.Item></Link>
+            <Menu.Item className='item-menu' key="contacto">Contacto</Menu.Item>
           </div>.
           <div>
             <Search

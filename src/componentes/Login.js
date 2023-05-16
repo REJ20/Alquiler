@@ -1,6 +1,10 @@
 import { Button, Checkbox, Form, Input } from 'antd';
 import '../estilos/LoginStyle.css';
 import { Link } from 'react-router-dom';
+import { Space } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
+import MenuBarUser  from './MenuBarUser';
+import Footer from './FooterPage';
 
 const onFinish = (values) => {
   console.log('Success:', values);
@@ -9,6 +13,8 @@ const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
 };
 const Login = () => (
+    <div>
+    <MenuBarUser />
     <div className='login-container'>
       <div className='form-login'>
         <h2>Login</h2>
@@ -30,8 +36,8 @@ const Login = () => (
             onFinishFailed={onFinishFailed}
             autoComplete="off"
         >
-            <Form.Item
-            label="Username"
+            <Form.Item className='input-container'
+            label="Usuario"
             name="username"
             rules={[
                 {
@@ -43,8 +49,8 @@ const Login = () => (
             <Input />
             </Form.Item>
 
-            <Form.Item
-            label="Password"
+            <Form.Item className='input-container'
+            label="Contraseña"
             name="password"
             rules={[
                 {
@@ -83,6 +89,16 @@ const Login = () => (
             </Link>
             </Form.Item>
         </Form>
+        <div className='new-account-container'>
+            <Space>
+            <PlusOutlined />
+            <Link to={'/FormRegister'}> <a href=''> Create a new account </a></Link>
+            </Space>
+        </div>
+      </div>
+  </div>
+  <div className='footer'>
+      <Footer />
       </div>
   </div>
 );

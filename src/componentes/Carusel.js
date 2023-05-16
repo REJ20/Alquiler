@@ -1,25 +1,24 @@
 import { Carousel } from 'antd';
-const contentStyle = {
-  height: '700px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+import '../estilos/carouselStyle.css';
+import carusel1 from '../imagenes/guardians3.jpg';
+import carusel2 from '../imagenes/suzume.jpg';
+import carusel3 from '../imagenes/cazador.jpg';
+import carusel4 from '../imagenes/rapido.jpg';
+
 function Carrusel() {
     return(
   <Carousel autoplay>
-    <div>
-      <h3 style={contentStyle}>1</h3>
+    <div className='carousel-container'>
+      <img src={carusel1} alt="" />
     </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
+    <div className='carousel-container'>
+      <img src={carusel2} alt="" />
     </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
+    <div className='carousel-container'>
+      <img src={carusel3} alt="" />
     </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
+    <div className='carousel-container'>
+      <img src={carusel4} alt="" />
     </div>
   </Carousel>
   )

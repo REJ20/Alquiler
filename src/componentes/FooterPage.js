@@ -1,9 +1,81 @@
-import { Footer } from "antd/es/layout/layout";
+import '../estilos/footerStyle.css';
 
 
-const FooterPage = () => (
+const Footer = () => {
+    return(
 
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
-)
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul >
+                <li>
+                    <a href="#">
+                        <h3>Redes Sociales</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>title one</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>title one</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    );
+}
 
-export default FooterPage;
+export default Footer;

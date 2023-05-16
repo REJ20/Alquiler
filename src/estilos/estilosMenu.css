@@ -1,5 +1,15 @@
+h3{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+h3:hover{
+    background-color:  #9932CC;
+    transition: 4.5ms;
+}
+
 .menu-container{
-    background-color: #0055b6;
+    background-color: #8B0000;
     color: #000;
     font-weight: bold;
     display: flex;
@@ -18,4 +28,14 @@
     width: 30%;
     display: flex;
     justify-content: space-around;
+}
+
+.item-menu{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-menu:hover{
+    background-color:  #9932CC;
 }

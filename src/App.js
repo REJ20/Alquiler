@@ -6,31 +6,19 @@ import MenuBarUser from './componentes/MenuBarUser';
 import Carrusel from './componentes/Carusel';
 import Catalogo from './componentes/CatalogoPeliculas';
 import Paginacion from './componentes/Paginacion';
-import FooterPage from './componentes/FooterPage';
+import Footer from './componentes/FooterPage';
 import PageBuy from './componentes/PageBuy';
 import Login from './componentes/Login';
-import Compra from './componentes/Compra';
+import Buy from './componentes/Compra';
 import FormModalBuy from './componentes/FormModalBuy';
 
 const Main = () => (
   <div className="App">
-  < div>
-    <header>
       <MenuBarUser/>
-    </header>
-    <main>
-      <Carrusel />
-      <section>
-        <Catalogo />
-      </section>
-      <section>
-        <Paginacion />
-      </section>
-    </main>
-    <footer>
-      <FooterPage />
-    </footer>
-  </div>
+      <Carrusel />  
+      <Catalogo />
+      <Paginacion />
+      <Footer />
 </div>
 )
 
@@ -42,7 +30,7 @@ function App() {
         <Route path='/PageBuy' element={<PageBuy/>} />
         <Route path='/Login' element={<Login />} />
         <Route path='/PageBuy' element={<PageBuy />} />
-        <Route path='/Compra' element={<Compra />} />
+        <Route path='/Compra' element={<Buy />} />
         <Route path='/FormModalBuy' element={<FormModalBuy />} />
         <Route path='/MenuBarUser' element={<MenuBarUser />} />
       </Routes>
