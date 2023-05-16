@@ -6,7 +6,7 @@ const Footer = () => {
 
     <div class="footer-links">
         <div class="footer-container">
-            <ul >
+            <ul>
                 <li>
                     <a href="#">
                         <h3>Redes Sociales</h3>
